@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven | Products</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+<header>
+    <h1>Toy Haven</h1>
+
+<button
+    class="menu-toggle"
+    id="menuToggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+>
+    ☰
+</button>
+
+    <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>>
+
+    <main id="mainContent">
+
+        <section class="products-page">
+
+            <h2>Our Products</h2>
+
+            <p>Explore our collection of toys and collectibles.</p>
+
+            <div class="featured-product-day">
+            <h2>Featured Product of the Day</h2>
+
+            <div id="featuredProduct"></div>
+            </div>
+
+            <div class="product-tools">
+
+        <label for="searchInput" class="sr-only">Search products</label>
+        <input
+    
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        >
+
+         <div class="filter-buttons">
+        <button class="filter-btn" data-category="All">All</button>
+        <button class="filter-btn" data-category="Figurines">Figurines</button>
+        <button class="filter-btn" data-category="Toys">Toys</button>
+        <button class="filter-btn" data-category="Board Games">Board Games</button>
+        <button class="filter-btn" data-category="Diecast Cars">Diecast Cars</button>
+        </div>
+
+        </div>
+
+        <div class="products-container" id="productsContainer">
+
+        </div>
+
+        
+
+        </section>
+
+    </main>
+
+    <div id="productModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal" class="close">&times;</span>
+
+        <img id="modalImage" src="images/batman.jpj.webp" alt="Product image">
+
+        <h2 id="modalName">Product Details</h2>
+
+        <p id="modalCategory"></p>
+
+        <p id="modalPrice"></p>
+
+        <button id="modalCartBtn">Add to Cart</button>
+
+    </div>
+
+</div>
+
+    <footer>
+
+    <h3>Toy Haven</h3>
+    <p>Your place for toys, collectibles, board games and diecast cars.</p>
+
+    <h3>Quick Links</h3>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="feedback.html">Feedback</a>
+
+    <h3>Newsletter</h3>
+<label for="newsletterEmail" class="sr-only">Email address</label>
+
+<input
+    type="email"
+    id="newsletterEmail"
+    placeholder="Enter your email"
+>
+
+<button>Subscribe</button>
+
+    <p>© 2026 Toy Haven. All rights reserved.</p>
+
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

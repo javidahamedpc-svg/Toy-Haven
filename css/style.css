@@ -1,0 +1,637 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF6DA;
+    color: #222;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px;
+}
+
+main h2 {
+    font-size: 32px;
+}
+
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.shop-btn {
+    display: inline-block;
+    background-color: #A9444A;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.shop-btn:hover {
+    background-color: #87373C;
+}
+
+.featured {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+    margin-top: 0;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer input {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+footer button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.products-page {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.product-tools {
+    margin-top: 30px;
+}
+
+#searchInput {
+    width: 300px;
+    max-width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background-color: #A9444A;
+    color: white;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.products-container .product-card {
+    width: 250px;
+}
+
+.products-container .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    width: 350px;
+    max-width: 80%;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#modalCartBtn {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modalCartBtn:hover {
+    background-color: #444;
+}
+
+.featured-product-day {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #F5E6B8;
+    border-radius: 10px;
+}
+
+#featuredProduct {
+    display: flex;
+    justify-content: center;
+}
+
+#featuredProduct .product-card {
+    width: 250px;
+}
+
+#featuredProduct .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-page {
+    padding: 40px 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.cart-item img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-info {
+    text-align: left;
+}
+
+.cart-summary {
+    margin-top: 30px;
+}
+
+.checkout-page {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#checkoutForm {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#checkoutForm label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#checkoutForm input[type="text"],
+#checkoutForm input[type="email"],
+#checkoutForm textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#checkoutForm textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.checkout-summary {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+#placeOrderBtn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#placeOrderBtn:hover {
+    background-color: #444;
+}
+
+#checkoutMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.wishlist-page {
+    padding: 40px 20px;
+}
+
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.wishlist-item img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.wishlist-item-info {
+    text-align: left;
+}
+
+.remove-wishlist-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-wishlist-btn:hover {
+    background-color: #444;
+}
+
+.feedback-page {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#feedbackForm {
+    background-color: #222;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#feedbackForm label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#feedbackForm input,
+#feedbackForm select,
+#feedbackForm textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#feedbackForm textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#feedbackForm button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#feedbackForm button:hover {
+    background-color: #444;
+}
+
+#feedbackMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.feedback-list {
+    margin-top: 40px;
+}
+
+.feedback-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.faq-section {
+    margin-top: 40px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px 5px 0;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .product-container,
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .cart-item,
+    .wishlist-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img,
+    .wishlist-item img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .checkout-page,
+    .feedback-page {
+        width: 90%;
+        padding: 10px;
+    }
+
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #mainNav {
+        display: none;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #mainNav.show {
+        display: block;
+    }
+
+    #mainNav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+}
+
+.hero {
+    background-image: url("../images/hero-figurine.jpg");
+    text-shadow: 1px 1px 4px black;
+}
+
+.hero h2,
+.hero p {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 10px 15px;
+    border-radius: 6px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+footer a {
+    display: inline-block;
+    padding: 10px 12px;
+    margin: 3px;
+}
+
+/* Product page buttons */
+.product-card button {
+    background-color: #A9444A;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #87373C;
+}
+
+.feedback-submit-btn {
+    background-color: #A9444A !important;
+    color: white;
+}
+
+.feedback-submit-btn:hover {
+    background-color: #87373C !important;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven | Cart</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+<header>
+    <h1>Toy Haven</h1>
+
+<button
+    class="menu-toggle"
+    id="menuToggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+>
+    ☰
+</button>
+
+    <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+
+    <main id="mainContent">
+
+        <section class="cart-page">
+
+            <h2>Shopping Cart</h2>
+
+            <div id="cartContainer"></div>
+
+            <div class="cart-summary">
+                <h3>Total: Rs. <span id="cartTotal">0</span></h3>
+
+                <button id="clearCartBtn">Clear Cart</button>
+
+                <a href="checkout.html" class="shop-btn">
+                    Proceed to Checkout
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+        <footer>
+
+    <h3>Toy Haven</h3>
+    <p>Your place for toys, collectibles, board games and diecast cars.</p>
+
+    <h3>Quick Links</h3>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="feedback.html">Feedback</a>
+
+    <h3>Newsletter</h3>
+<label for="newsletterEmail" class="sr-only">Email address</label>
+
+<input
+    type="email"
+    id="newsletterEmail"
+    placeholder="Enter your email"
+>
+
+<button>Subscribe</button>
+
+    <p>© 2026 Toy Haven. All rights reserved.</p>
+
+    </footer>
+
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

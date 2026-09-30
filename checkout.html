@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven | Checkout</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+<header>
+    <h1>Toy Haven</h1>
+
+<button
+    class="menu-toggle"
+    id="menuToggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+>
+    ☰
+</button>
+
+    <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+
+    <main id="mainContent">
+
+        <section class="checkout-page">
+
+            <h2>Checkout</h2>
+
+            <form id="checkoutForm">
+
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="address">Delivery Address</label>
+                <textarea id="address" placeholder="Enter your delivery address" required></textarea>
+
+                <h3>Payment Method</h3>
+
+                <label>
+                    <input type="radio" name="payment" value="Card" required>
+                    Card
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="Cash on Delivery">
+                    Cash on Delivery
+                </label>
+
+                <div class="checkout-summary">
+                    <h3>Order Summary</h3>
+
+                    <div id="orderSummary"></div>
+
+                    <h3>
+                        Final Total: Rs.
+                        <span id="checkoutTotal">0</span>
+                    </h3>
+                </div>
+
+                <button type="submit" id="placeOrderBtn">
+                    Place Order
+                </button>
+
+                <p id="checkoutMessage"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+        <footer>
+
+    <h3>Toy Haven</h3>
+    <p>Your place for toys, collectibles, board games and diecast cars.</p>
+
+    <h3>Quick Links</h3>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="feedback.html">Feedback</a>
+
+    <h3>Newsletter</h3>
+<label for="newsletterEmail" class="sr-only">Email address</label>
+
+<input
+    type="email"
+    id="newsletterEmail"
+    placeholder="Enter your email"
+>
+
+<button>Subscribe</button>
+
+    <p>© 2026 Toy Haven. All rights reserved.</p>
+
+    </footer>
+
+    <script src="js/checkout.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
